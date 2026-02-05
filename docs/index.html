@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated AR Control System | FinTech Portfolio</title>
+    <meta name="description"
+        content="A custom ERP-lite solution that generates GST-compliant invoices, tracks payments, and automates email follow-ups.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Automated AR Control System</div>
+            <nav>
+                <!-- Navigation can go here if needed later -->
+                <a href="#hero" class="btn-link">Home</a>
+                <a href="#features" class="btn-link">Features</a>
+                <a href="#how-it-works" class="btn-link">How It Works</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="text-content">
+                    <h1>Automate Your Accounts Receivable inside Google Sheets.</h1>
+                    <p class="subheadline">A custom ERP-lite solution that generates GST-compliant invoices, tracks
+                        payments, and automates email follow-ups.</p>
+                    <a href="https://docs.google.com/spreadsheets" target="_blank" class="btn btn-primary"
+                        id="get-template-btn">Get the Free
+                        Template</a>
+                </div>
+                <div class="visual-content">
+                    <img src="images/dashboard-hero.png" alt="Automated AR Control System Dashboard" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem vs Solution Section -->
+        <section id="problem-solution" class="problem-solution">
+            <div class="container">
+                <div class="comparison-visual">
+                    <img src="images/manual-vs-our-way.jpg" alt="Manual Process vs Automated AR Control Comparison"
+                        class="comparison-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/ic-dashboard.png" alt="Dashboard Icon">
+                        </div>
+                        <h3>C-Suite Dashboard</h3>
+                        <p>Real-time visualization of Total Revenue, Invoices Sent, and Pending Payments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/ic-invoice.png" alt="Invoice Icon">
+                        </div>
+                        <h3>Smart Invoice Engine</h3>
+                        <p>Generates professional HTML/CSS PDFs with dynamic Indian GST logic.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/ic-mail.png" alt="Email Icon">
+                        </div>
+                        <h3>Auto-Pilot Follow-ups</h3>
+                        <p>Background triggers check due dates and send email reminders automatically.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/ic-database.png" alt="Database Icon">
+                        </div>
+                        <h3>Master Databases</h3>
+                        <p>Integrated Client and Product databases with VLOOKUP for error-free data entry.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <img src="images/ic-audit.png" alt="Audit Icon">
+                        </div>
+                        <h3>Audit & Compliance</h3>
+                        <p>Immutable logs track every action. Secure file archiving in Google Drive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How It Works</h2>
+                <div class="steps-grid">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Initialize</h3>
+                        <p>Run the one-click setup to configure sheets and security triggers.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Create</h3>
+                        <p>Select clients and items from dropdowns. Taxes are calculated automatically.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Automate</h3>
+                        <p>Click 'Save & Send' to email the PDF and schedule reminders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Screenshots Placeholders -->
+        <section id="screenshots" class="screenshots-section">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="screenshots-grid">
+                    <img src="images/invoice-pdf-preview.jpg" alt="Invoice PDF Preview" class="screenshot-img">
+                    <img src="images/invoice-creator.png" alt="Invoice Creator Dashboard" class="screenshot-img">
+                    <img src="images/email-preview.png" alt="Email Preview" class="screenshot-img">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>Designed & Developed by Mohammad Arif.</p>
+            <div class="social-links">
+                <a href="https://github.com/md-arif-finance/finance-automation-suite" target="_blank">GitHub
+                    Repository</a>
+                <a href="https://www.linkedin.com/in/kotlang/" target="_blank">LinkedIn Profile</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Verification Modal -->
+    <div id="verification-modal" class="modal-overlay d-none">
+        <div class="modal-content">
+            <h3 class="modal-title">Heads up!</h3>
+            <p class="modal-text">Since this is a private portfolio tool, Google will ask for verification.<br>Here is
+                how to enable it:</p>
+
+            <div class="modal-steps">
+                <div class="modal-step">
+                    <span class="step-label">Step 1</span>
+                    <img src="images/installation-step-1.jpg" alt="Verification Step 2">
+                </div>
+                <div class="modal-step">
+                    <span class="step-label">Step 2</span>
+                    <img src="images/installation-step-2.jpg" alt="Verification Step 3">
+                </div>
+                <div class="modal-step">
+                    <span class="step-label">Step 3</span>
+                    <img src="images/installation-step-3.jpg" alt="Verification Step 4">
+                </div>
+                <div class="modal-step">
+                    <span class="step-label">Step 4</span>
+                    <img src="images/installation-step-4.jpg" alt="Verification Step 5">
+                </div>
+                <div class="modal-step">
+                    <span class="step-label">Step 5</span>
+                    <img src="images/installation-step-5.jpg" alt="Verification Step 6">
+                </div>
+                <div class="modal-step">
+                    <span class="step-label">Step 6</span>
+                    <img src="images/installation-step-6.jpg" alt="Verification Step 7">
+                </div>
+            </div>
+
+            <button id="modal-confirm-btn" class="btn btn-primary">I Understand, Take me to the Sheet</button>
+
+            <details class="modal-details">
+                <summary>Why does Google flag this?</summary>
+                <div class="details-content">
+                    <p><strong>The Logic:</strong> To automate your work, this script needs permission to act on your
+                        behalf, specifically to send emails (Gmail) and save PDFs (Drive).</p>
+                    <p><strong>The Reason:</strong> Google treats any script that sends emails as "Unverified" unless it
+                        has gone through a formal corporate security audit (which takes weeks). Since this is a free,
+                        open-source portfolio project, it hasn't undergone that corporate process.</p>
+                    <p><strong>Your Safety:</strong> The script runs entirely inside your Google account. No data is
+                        ever sent to me or any external server. You are the owner of the code the moment you copy the
+                        sheet.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</body>
+
+</html>
