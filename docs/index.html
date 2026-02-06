@@ -18,11 +18,17 @@
     <header>
         <div class="container">
             <div class="logo">Automated AR Control System</div>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <nav>
                 <!-- Navigation can go here if needed later -->
                 <a href="#hero" class="btn-link">Home</a>
                 <a href="#features" class="btn-link">Features</a>
                 <a href="#how-it-works" class="btn-link">How It Works</a>
+                <a href="#screenshots" class="btn-link">Gallery</a>
             </nav>
         </div>
     </header>
@@ -49,8 +55,13 @@
         <section id="problem-solution" class="problem-solution">
             <div class="container">
                 <div class="comparison-visual">
-                    <img src="images/manual-vs-our-way.jpg" alt="Manual Process vs Automated AR Control Comparison"
-                        class="comparison-img">
+                    <div id="video-container" class="video-container">
+                        <img src="images/manual-vs-our-way.jpg" alt="Video Cover" class="video-cover">
+                        <div class="video-overlay"></div>
+                        <div class="play-button">
+                            <div class="yt-play-btn"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

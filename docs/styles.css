@@ -30,6 +30,70 @@ body {
     line-height: 1.6;
 }
 
+/* Mobile Navigation Syles */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.mobile-menu-btn .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+        /* Hidden by default */
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    /* Layout Adjustments */
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero,
+    .problem-solution,
+    .features,
+    .how-it-works,
+    .screenshots-section {
+        padding: 60px 0;
+    }
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -194,8 +258,120 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-.comparison-img:hover {
-    transform: scale(1.01);
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.video-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.video-container:hover .video-cover {
+    transform: scale(1.02);
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.video-container:hover .video-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: transform 0.3s ease;
+    /* Reset previous flex/gap styles that might interfere */
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+}
+
+.video-container:hover .play-button {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.yt-play-btn {
+    width: 68px;
+    height: 48px;
+    background-color: #ff0000;
+    border-radius: 12px;
+    /* Slightly softer curve than pure rectangle */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* White triangle */
+.yt-play-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 18px solid white;
+    /* No margin correction needed for basic triangle here, but small adjustment helps visual centering: */
+    margin-left: 4px;
+}
+
+.video-container:hover .yt-play-btn {
+    background-color: #cc0000;
+    /* Darker red on hover */
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid var(--action-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 5;
+    /* Below play button, but visible when play button is hidden */
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 /* Key Features */
