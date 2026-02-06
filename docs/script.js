@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modalConfirmBtn) {
         modalConfirmBtn.addEventListener('click', () => {
             // Redirect to the actual Google Sheet in a new tab
-            window.open("https://docs.google.com/spreadsheets", "_blank");
+            window.open("https://docs.google.com/spreadsheets/d/1s0hWRnYPF35DMEu5q2WZuUQxisJscrmzIXuU1Nm7LyI/copy", "_blank");
             // Close the modal
             modalOverlay.classList.remove('active');
             setTimeout(() => {
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             player = new YT.Player('yt-player', {
                 height: '100%',
                 width: '100%',
-                videoId: 'QwViseiP6Eg',
+                videoId: 'Ye4R67UrsFs',
                 host: 'https://www.youtube-nocookie.com', // Privacy Mode
                 playerVars: {
                     'autoplay': 1,
